@@ -1,0 +1,140 @@
+.tile.is-parent {
+  border: 1px solid #d3d3d3;
+  border-radius: 12px; /* Meningkatkan border radius untuk penampilan lebih modern */
+  padding: 15px;
+  margin: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Tambahan */
+  background: linear-gradient(145deg, #e6e6e6, #ffffff); /* Gradient background */
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1), -5px -5px 15px rgba(255, 255, 255, 0.5); /* Bayangan */
+}
+
+
+
+.tile.is-parent:hover,
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card {
+  border: 1px solid #d3d3d3; /* Border halus */
+  border-radius: 12px; /* Meningkatkan border radius untuk penampilan lebih modern */
+  margin: 15px 0; /* Jarak antar card */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transisi untuk gerakan dan bayangan */
+}
+
+.card-header {
+  border-bottom: 1px solid #e0e0e0; /* Garis bawah lembut */
+}
+
+.table td {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.subtitle {
+  font-family: 'Segoe UI', Tahoma, sans-serif; /* Font tipis dan bersih */
+  font-size: 0.9rem;
+  color: #666; /* Warna lembut */
+  letter-spacing: 0.5px;
+}
+
+
+#todoIcon i {
+  color: #3498db;
+} /* To Do */
+#doingIcon i {
+  color: #f39c12;
+} /* Doing */
+#doneIcon i {
+  color: #2ecc71;
+} /* Done */
+#poinIcon i {
+  color: #e67e22;
+} /* Poin */
+
+.loader-anim {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+}
+.svg {
+  height: 100px;
+  width: 100px;
+}
+.lingkaran {
+  stroke: #00ffc8;
+  stroke-width: 5px;
+  fill: none;
+  stroke-dasharray: 251;
+  stroke-dashoffset: 251;
+  animation: loading 1s infinite linear;
+}
+
+@keyframes loading {
+  0%,
+  100% {
+    stroke-dashoffset: 251;
+  }
+  50% {
+    stroke-dashoffset: 0;
+  }
+  50.1% {
+    stroke-dashoffset: 502;
+  }
+}
+
+.fade-out {
+  animation: fadeOut 0.5s ease-out forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.table-fixed thead{
+  background-color: #b0b0b0;
+  table-layout: auto;
+  text-align: center; 
+}
+
+.table-fixed thead th {
+  color: #000000; 
+  font-weight: bold; 
+  padding: 10px; 
+}
+
+.table-fixed thead th:first-child {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+/* Membulatkan hanya ujung kanan */
+.table-fixed thead th:last-child {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+

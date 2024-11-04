@@ -1,0 +1,43 @@
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .notification {
+    border-left: 4px solid #3273dc; /* Blue color */
+  }
+
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .table th, .table td {
+    padding: 12px 15px;
+    text-align: left;
+  }
+
+  .table th {
+    background-color: #f0f0f0;
+    border-bottom: 2px solid #ddd;
+  }
+
+  .table tbody tr:hover {
+    background-color: #f1f1f1; /* Hover effect */
+  }
+
+  .icon {
+    margin-right: 5px;
+  }
+
+  @media (max-width: 768px) {
+    .table {
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+  }

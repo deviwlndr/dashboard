@@ -1,0 +1,83 @@
+
+<div class="form-container">
+  <h1 class="title">
+  Meeting Schedule
+</h1>
+<div class="" style="font-family: Arial, sans-serif;">
+  <div class="field">
+    <label class="label" style=" font-size: 14px;">Select Project</label>
+    <div class="control" style="border-bottom: 3px solid #000; padding-bottom: 5px;">
+      <select id="kode" name="projectName" style="border: none; width: 100%; color: #000; outline: none;" required>
+
+      </select>
+    </div>
+  </div>
+
+  <div class="field">
+    <label class="label" style="color: black; font-size: 14px;">Meeting Title</label>
+    <input id="summary" type="text" placeholder="Meeting Title" style="border: none; border-bottom: 3px solid #000; width: 100%; outline: none; padding: 5px 0;">
+  </div>
+
+  <div class="field">
+    <label class="label" style="color: black; font-size: 14px;">Link Zoom</label>
+    <input id="location" type="text" placeholder="Lokasi atau URL Link Zoom" style="border: none; border-bottom: 3px solid #000; width: 100%; outline: none; padding: 5px 0;">
+  </div>
+
+
+  <!-- <div class="field">
+    <label class="label"><i class=""></i> Tahun-Bulan-Tanggal</label>
+    <div class="control">
+      <input class="input" type="date" id="date" required>
+    </div>
+  </div> -->
+  
+  <!-- <div class="field">
+    <label class="label"><i class=""></i> Tahun-Bulan-Tanggal</label>
+    <div class="control">
+      <input class="input" type="date" id="date" required>
+    </div>
+  </div> -->
+  <div class="field">
+    <label class="label" style="color: black; font-size: 14px;">Date</label>
+    <input id="date" type="date" name="meetingDate" style="border: none; border-bottom: 3px solid #000; width: 100%; outline: none; padding: 5px 0;">
+  </div>
+  
+  <div class="field">
+    <label class="label" style="color: black; font-size: 14px;">Jam Mulai</label>
+    <div class="control">
+      <input class="input" type="time" id="timeStart" required>
+    </div>
+  </div>
+
+  <div class="field">
+    <label class="label" style="color: black; font-size: 14px;">Jam Selesai</label>
+    <div class="control">
+      <input class="input" type="time" id="timeEnd" required>
+    </div>
+  </div>
+
+  <!-- <div class="field">
+    <label class="label"><i class=""></i>Meeting Agenda</label>
+    <div class="control">
+      <textarea class="textarea" id="description" placeholder="List dari sprint backlog" required></textarea>
+    </div>
+  </div> -->
+
+  <div class="field">
+    <label class="label" style="color: black; font-size: 14px;">Meeting Agenda</label>
+    <input id="description" ="text" placeholder="List dari Sprint Backlog" style="border: none; border-bottom: 3px solid #000; width: 100%; outline: none; padding: 5px 0;">
+  </div>
+
+    <div class="field">
+      <label class="label" style="color: black; font-size: 14px;"> URL PDF from GDrive</label>
+      <input id="attachments" type="text" placeholder="" style="border: none; border-bottom: 3px solid #000; width: 100%; outline: none; padding: 5px 0;">
+    </div>
+  </div>
+  <div class="field is-grouped" style="justify-content: center;">
+    <div class="control">
+      <button class="button is-link" id="tombolmeet">
+        Send
+      </button>
+    </div>
+  </div> 
+</div>

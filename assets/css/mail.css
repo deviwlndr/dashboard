@@ -1,0 +1,94 @@
+/* Link ke Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+body {
+    background: linear-gradient(135deg, #4a90e2, #9013fe); /* Gradient background */
+    padding: 0; /* Menghilangkan padding default */
+    margin: 0; /* Menghilangkan margin default */
+    
+    /* Menggunakan font Montserrat dengan varian 400 (normal) dan 600 (semi-bold) */
+    font-family: 'Montserrat', sans-serif; 
+}
+
+
+.hero.is-fullheight {
+    background-color: transparent; /* Menghilangkan warna latar belakang hero */
+}
+
+.container {
+    max-width: 600px; /* Maksimal lebar kontainer */
+    padding: 2rem; /* Padding untuk kontainer */
+}
+
+.box {
+    border-radius: 15px; /* Sudut kotak membulat */
+    padding: 2rem; /* Padding untuk box */
+    
+    /* Mengatur efek bayangan yang lebih lembut dan natural */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1), 
+                0 4px 8px rgba(0, 0, 0, 0.05);
+    
+    /* Warna latar belakang putih transparan dengan sedikit opacity */
+    background-color: rgba(255, 255, 255, 0.8); 
+
+    /* Efek transisi yang lebih halus */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box:hover {
+    /* Efek hover untuk memberi kesan interaksi */
+    transform: translateY(-5px); /* Sedikit mengangkat elemen saat di-hover */
+    
+    /* Bayangan saat hover untuk kesan lebih hidup */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15), 
+                0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+.avatar img {
+    max-width: 500px; /* Ukuran gambar avatar */
+    max-height: 500px; /* Ukuran gambar avatar */
+    border: 5px solid #4a90e2; /* Border gambar */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Bayangan pada gambar */
+    transition: transform 0.3s; /* Transisi untuk gambar */
+}
+
+.avatar img:hover {
+    transform: scale(1.1); /* Membesar saat hover pada gambar */
+}
+
+.hero-title {
+    color: #ffffff; /* Warna teks judul */
+}
+
+.subtitle {
+    margin-bottom: 1.5rem; /* Jarak bawah subtitle */
+    color: #ffffff; /* Warna teks subtitle */
+}
+
+#btn {
+    background-color: #6a1b9a; /* Warna tombol (ungu lebih gelap) */
+    color: white; /* Warna teks tombol */
+    width: 200px; /* Lebar tombol */
+    height: 50px; /* Tinggi tombol */
+    border-radius: 8px; /* Sudut yang lebih halus */
+    font-weight: bold; /* Teks tombol tebal */
+    font-size: 16px; /* Ukuran font yang sesuai */
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s; /* Transisi tambahan untuk bayangan */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan halus */
+    cursor: pointer; /* Mengubah kursor saat hover */
+    text-transform: uppercase; /* Teks dengan huruf besar semua */
+}
+
+#btn:hover {
+    background-color: #9013fe; /* Warna tombol saat hover (ungu lebih cerah) */
+    transform: scale(1.05); /* Efek membesar saat hover */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Bayangan lebih tebal saat hover */
+}
+
+#nama {
+    display: flex;
+    justify-content: center; /* Mengatur tombol agar berada di tengah secara horizontal */
+    align-items: center; /* Mengatur tombol agar berada di tengah secara vertikal (opsional jika diperlukan) */
+    height: 10vh; /* Jika ingin tombol di tengah secara vertikal seluruh layar */
+}

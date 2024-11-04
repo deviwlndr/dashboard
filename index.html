@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="assets/img/logo.png" />
+    <title>Domyikado Dashboard</title>
+    <!--========== jscroot ==========-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+    <link rel="stylesheet" href="./assets/css/custom.css" />
+    <script src="jscroot/index.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/program.css">
+    <link rel="stylesheet" href="./assets/css/publish.css">
+    <link rel="stylesheet" href="./assets/css/anggota.css" />
+    <link rel="stylesheet" href="./assets/css/home.css">
+    <link rel="stylesheet" href="./assets/css/accounts.css">
+    <link rel="stylesheet" href="./assets/css/blocked.css">
+  </head>
+  <body>
+    <!--========== HEADER ==========-->
+    <header class="header">
+      <div class="header__container" id="header__container"></div>
+    </header>
+  
+    <!--========== NAV ==========-->
+    <div class="nav" id="navbar"></div>
+  
+    <!--========== CONTENTS ==========-->
+    <main id="content" class="hidden">
+    </main>
+  
+    <div class="loader-anim">
+      <svg class="svg">
+        <circle class="lingkaran" id="lingkarang" cy="50" cx="50" r="40"></circle>
+      </svg>
+    </div>
+  </body>  
+</html>

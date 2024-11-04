@@ -1,0 +1,119 @@
+
+
+.field.is-grouped {
+  border: none;
+  display: flex;
+  justify-content: center; /* Meletakkan tombol di tengah secara horizontal */
+  align-items: center;
+  margin-top: 50px; /* Menambahkan jarak dari atas */
+}
+
+#buttonkirimaccount {
+  padding: 15px 45px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 30px;
+  background: linear-gradient(to right, #36d1dc, #5b86e5);
+  border: none;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  
+}
+
+/* Gaya untuk tombol Cancel */
+#buttonbatalaccount {
+  padding: 15px 45px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 30px;
+  background-color: #FF5F67;
+  border: none;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+ 
+}
+
+/* Efek hover untuk tombol Send */
+#buttonkirimaccount:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+ 
+}
+
+/* Efek hover untuk tombol Cancel */
+#buttonbatalaccount:hover {
+  background-color: #e54c54;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+  
+}
+
+.button-container {
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center items horizontally */
+  gap: 20px; /* Space between buttons */
+  margin-top: 20px; /* Optional: space above the buttons */
+}
+
+  
+.box {
+  width: 60%;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+
+#email{
+  border: none; 
+  border-bottom: 1px solid #000; 
+  width: 100%; outline: none; 
+  padding: 5px 0;
+  border-right: 50%;
+  color: #aaa;
+  opacity: 1; 
+}
+
+#githubusername{
+  border: none; 
+  border-bottom:1px solid #000; 
+  width: 100%; outline: none; 
+  padding: 5px 0;
+  border-right: 50%;
+  color: #aaa;
+  opacity: 1; 
+}
+
+#gitlabusername{
+  border: none; 
+  border-bottom: 1px solid #000; 
+  width: 100%; 
+  outline: none; 
+  padding: 5px 0;
+  border-right: 50%;
+  color: #aaa; 
+  opacity: 1; 
+}
+
+#githostusername{
+  border: none; 
+  border-bottom: 1px solid #000; 
+  width: 100%; 
+  outline: none; 
+  padding: 5px 0;
+  border-right: 50%;
+  color: #aaa; 
+  opacity: 1; 
+}
+
+.field > .label {
+  font-size: 15px;
+}
